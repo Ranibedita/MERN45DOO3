@@ -15,6 +15,7 @@ header {
   padding: 1rem;
 }
 
+
 nav ul {
   list-style: none;
   display: flex;
@@ -91,6 +92,12 @@ form button:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
-  color: #fff;
+  background: grey;
+  color: white;
+  row-gap: 1px;
+}
+footer img{
+  row-gap: 0px;
+  justify-content: center;
+  gap: 0px;
 }
