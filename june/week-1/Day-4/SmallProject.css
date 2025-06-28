@@ -1,4 +1,4 @@
- /*
+ 
 .grid-container{
     width: 400px;
     height: 400px;
@@ -44,7 +44,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: aquamarine;
-}  */
+}  
 
 nav{
     width: 100vw;

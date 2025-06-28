@@ -1,62 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HubSpot Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-  <header>
-      <nav>
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-      </ul>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">HubSpot</div>
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+      <a href="#">Contact</a>
+      <a href="#" class="btn">Get Started</a>
     </nav>
   </header>
 
-  <section id="hero">
-    <h1>Welcome to Our Services</h1>
-    <p>Empowering your business with innovative solutions.</p>
+  <section class="hubspot-hero">
+    <div class="text-section">
+      <h4>HUBSPOT CUSTOMER PLATFORM</h4>
+      <h1>With HubSpot, you <em>can</em> have it all</h1>
+      <p>Unify your growing business on one AI-powered platform that’s easy to use, delivers ROI in no time, and transforms customer happiness into your competitive edge.</p>
+      <div class="buttons">
+        <button class="btn primary">Get a demo</button>
+        <button class="btn secondary">Get started free</button>
+      </div>
+      <p class="sub-text">Get a demo of our premium software, or get started with free tools.</p>
+    </div>
+
+    <div class="graphic-section">
+          <img src="https://www.hubspot.com/hs-fs/hubfs/Homepage%20w_%20Customer%20Agent%20for%20Spotlight%20-%20Dimension%20Size%201216x838%20(1).png?width=1824&height=1262&name=Homepage%20w_%20Customer%20Agent%20for%20Spotlight%20-%20Dimension%20Size%201216x838%20(1).png" alt="User"/>
+          </div>
+            
   </section>
 
-  <section id="services">
-    <div class="service">
-      <h2>Marketing Automation</h2>
-      <p>Automate your marketing efforts to reach the right audience at the right time.</p>
+  <section class="customer-logos">
+  <h2>258,000+ customers in over <span>135 countries</span> grow their businesses with HubSpot</h2>
+  <div class="logo-slider">
+    <button class="nav-btn">&#10094;</button>
+
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay">
+      <img src="https://1000logos.net/wp-content/uploads/2021/06/DoorDash-logo.jpg" alt="DoorDash">
+      <img src="https://logos-world.net/wp-content/uploads/2023/12/Reddit-Logo.jpg" alt="Reddit">
+      <img src="https://1000logos.net/wp-content/uploads/2019/08/TripAdvisor-logo-1.jpg" alt="TripAdvisor">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Eventbrite-logo.png" alt="Eventbrite">
     </div>
-    <div class="service">
-      <h2>SEO Optimization</h2>
-      <p>Enhance your website's visibility on search engines.</p>
+
+    <button class="nav-btn">&#10095;</button>
+  </div>
+</section>
+
+<section class="agents-section">
+  <h2>Introducing Breeze Agents — Your AI Growth Team</h2>
+  <p class="subtitle">
+    HubSpot’s AI-powered agents are digital workers that extend your team to scale support, automate prospecting, and create content faster.
+  </p>
+
+  <div class="agents-cards">
+    <!-- Customer Agent -->
+    <div class="card">
+      <img src="https://www.hubspot.com/hs-fs/hubfs/Image%20No.%201%20Customer%20Agent%20%231-1.png?width=468&height=345&name=Image%20No.%201%20Customer%20Agent%20%231-1.png" alt="Customer Agent">
+      <h3>Customer Agent</h3>
+      <p>Scale support and resolve half of customer inquiries 24/7.</p>
+      <a href="#">Learn more about customer agent</a>
     </div>
-    <div class="service">
-      <h2>Content Strategy</h2>
-      <p>Develop a content plan that resonates with your target audience.</p>
+
+    <!-- Prospecting Agent -->
+    <div class="card">
+      <img src="https://www.hubspot.com/hs-fs/hubfs/Image%20No.%202%20Prospecting%20Agent%20%233-1.png?width=468&height=345&name=Image%20No.%202%20Prospecting%20Agent%20%233-1.png" alt="Prospecting Agent">
+      <h3>Prospecting Agent (Beta)</h3>
+      <p>Instantly research, personalize, and execute sales outreach at scale.</p>
+      <a href="#">Learn more about prospecting agent</a>
+    </div>
+
+    <!-- Content Agent -->
+    <div class="card">
+      <img src="https://www.hubspot.com/hs-fs/hubfs/Image%20No.%203%20Content%20Agent%20%231-1.png?width=468&height=345&name=Image%20No.%203%20Content%20Agent%20%231-1.png" alt="Content Agent">
+      <h3>Content Agent (Beta)</h3>
+      <p>Create conversion-optimized and on-brand content in minutes.</p>
+      <a href="#">Learn more about content agent</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="hubspot-info">
+  <div class="info-container">
+    <!-- Left Image / Video Placeholder -->
+    <div class="info-image">
+      <img src="how-hubspot-works.jpg" alt="How HubSpot Works">
+      <div class="play-btn">&#9658;</div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="info-text">
+      <h2>What is HubSpot?</h2>
+      <p>
+        HubSpot is an AI-powered customer platform with all the software,
+        integrations, and resources you need to connect your marketing,
+        sales, and customer service. HubSpot’s connected platform enables
+        you to grow your business faster by focusing on what matters most: your customers.
+      </p>
+      <p>
+        Get a demo to learn about our premium software, or get started with
+        our full suite of free tools and upgrade as you grow.
+      </p>
+      <div class="info-buttons">
+        <button class="btn primary">Get a demo</button>
+        <button class="btn secondary">Get started free</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="office-section">
+<section class="front-office-section">
+  <div class="image-wrapper">
+    <img src="https://www.hubspot.com/hs-fs/hubfs/crm-platform-asset-alt@2x%20(1)%20(1).webp?width=1380&height=713&name=crm-platform-asset-alt@2x%20(1)%20(1).webp" alt="HubSpot customer collaboration" />
+  </div>
+    <h2>Your whole front office. One customer platform.</h2>
+    <p>
+      HubSpot brings your marketing, sales, and service teams together on the same AI-powered customer platform.
+      It’s easy to use, provides value fast, and gives all teams a unified view of the customer at every stage
+      in their journey. Each product in the platform is powerful on its own, but the real magic happens when
+      you use them together.
+    </p>
+    
+    <div class="cta-buttons">
+      <button class="btn primary">Get a demo</button>
+      <button class="btn secondary">Get started free</button>
+    </div>
+  
+</section>
+
+
+<div class="container">
+
+    <!-- Marketing Hub -->
+    <div class="card">
+      <h2><span class="icon">⚡</span> Marketing Hub®</h2>
+      <p>AI-powered marketing software that helps you generate leads and automate marketing.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li><span class="checkmark">✔</span> Breeze social media agent</li>
+          <li><span class="checkmark">✔</span> Marketing automation</li>
+          <li><span class="checkmark">✔</span> Analytics</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+
+    <!-- Sales Hub -->
+    <div class="card">
+      <h2><span class="icon">🌟</span> Sales Hub®</h2>
+      <p>Easy-to-adopt sales software that leverages AI to build pipelines and close deals.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li><span class="checkmark">✔</span> Sales workspace</li>
+          <li><span class="checkmark">✔</span> Deal management</li>
+          <li><span class="checkmark">✔</span> Breeze prospecting agent</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+  
+    <!-- Service Hub -->
+    <div class="card">
+      <h2><span class="icon">❤️</span> Service Hub®</h2>
+      <p>Customer service software powered by AI to scale support and drive retention.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li><span class="checkmark">✔</span> Omni-channel help desk</li>
+          <li><span class="checkmark">✔</span> Breeze customer agent</li>
+          <li><span class="checkmark">✔</span> Customer success workspace</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+      </div>
+   <div class="container">
+    <div class="card">
+      <h2><span class="icon">📺</span> Content Hub™</h2>
+      <p>All-in-one, AI-powered content marketing software that helps marketers create and manage content.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li>Scalable CMS</li>
+          <li>Brand voice</li>
+          <li>Breeze content agent</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+    <div class="card">
+      <h2><span class="icon">⚙️</span>Operations Hub®</h2>
+      <p>Operations software that leverages AI to help you activate and manage your data.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li>Data sync</li>
+          <li>Programmable automation</li>
+          <li>AI-powered data quality automation</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📈</span> Commerce Hub™</h2>
+      <p>B2B commerce software designed to help you collect payments and automate billing.</p>
+      <div class="features">
+        <h3>Popular Features</h3>
+        <ul>
+          <li>Invoices & subscriptions</li>
+          <li>Quotes</li>
+          <li>Payment links</li>
+        </ul>
+      </div>
+      <a href="#" class="button">Learn more</a>
+    </div>
+    </div>
+</section>
+
+
+
+
+<section class="breeze-section">
+    <div class="breeze-text">
+      <h2>Meet Breeze — The complete AI solution for your business.</h2>
+      <p>
+        Use Breeze Copilot to assist with tasks,Breeze Agents to automate your work, Breeze Intelligence to enrich your data,and a growing list of Breeze features to help you get work done faster.
+      </p>
+    </div>
+    <div class="breeze-button">
+      <button>Learn more</button>
+    </div>
+</section>
+
+ <section class="hubspot-update">
+    <h2>What’s New at HubSpot</h2>
+    <div class="content">
+      <div class="video-thumbnail">
+        <img src="screenshot.png" alt="Customer Agent Video">
+        <div class="play-button">&#9658;</div>
+      </div>
+      <div class="text-content">
+        <h3>Scale up without slowing down.</h3>
+        <p>
+          Your teams spend hours answering the same questions. Why not let 
+          <a href="#">Customer Agent</a> do it instead? Easily close tickets 24/7 with information pulled straight from your knowledge base, so your customers get help while you get time back for more complex tasks.
+        </p>
+        <a href="#" class="learn-button">Learn more</a>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <section class="roi-section">
+  <h2>HubSpot customer’s results after 1 year:</h2>
 
-  <footer>
-    <p>legal stuff</p>
-    <p>privacy policy</p>
-    <p>manage cookies</p>
-    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjMuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMzguNjU5NjEgOTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMzOC42NTk2MSA5NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBvbHlnb24gZmlsbD0iIzIxMzM0MyIgcG9pbnRzPSIzNi42NzcyNSw1NC4zMzIxOSAxMS44MDkxOCw1NC4zMzIxOSAxMS44MDkxOCw4MC41Mjg1OSAwLDgwLjUyODU5IDAsMTUuODkwODMgMTEuODA5MTgsMTUuODkwODMgCgkJMTEuODA5MTgsNDIuOTcxMDMgMzYuNjc3MjUsNDIuOTcxMDMgMzYuNjc3MjUsMTUuODkwODMgNDguNDgzNzgsMTUuODkwODMgNDguNDgzNzgsODAuNTI4NTkgMzYuNjc3MjUsODAuNTI4NTkgCSIvPgoJPHBhdGggZmlsbD0iIzIxMzM0MyIgZD0iTTg2LjI2OTM2LDU5LjYzNjM0YzAsNS4zODM0NC00LjM4NTMxLDkuNzYzNzUtOS43Njc1NSw5Ljc2Mzc1Yy01LjM4MzY4LDAtOS43NjYxNi00LjM4MDMxLTkuNzY2MTYtOS43NjM3NQoJCXYtMjcuNjg0OUg1NS41NTMzOXYyNy42ODQ5YzAsMTEuNTUwMjUsOS4zOTc2NCwyMC45NDU1OCwyMC45NDg0MiwyMC45NDU1OGMxMS41NDg0MiwwLDIwLjk0NjA1LTkuMzk1MzMsMjAuOTQ2MDUtMjAuOTQ1NTgKCQl2LTI3LjY4NDloLTExLjE3ODVWNTkuNjM2MzR6Ii8+Cgk8cGF0aCBmaWxsPSIjMjEzMzQzIiBkPSJNMTY5LjI0NTU2LDM0LjgwMTljMC01LjY3NjIxLDMuNzU2OTktNy40NzYxNSw3Ljg3MDI1LTcuNDc2MTVjMy4zMTIwMSwwLDcuNjk0NzIsMi41MjA2OSwxMC41NTQyNCw1LjU4MzYxCgkJbDcuMzMzMjUtOC42NDQ0Yy0zLjY2NDUxLTQuOTUxMi0xMS4wODc5MS04LjM3NDEzLTE3LjE3MDc1LTguMzc0MTNjLTEyLjE2NzMxLDAtMjAuOTMzODUsNy4xMTQyNC0yMC45MzM4NSwxOC45MTEwNgoJCWMwLDIxLjg4MDQ2LDI2Ljc0ODIsMTQuOTQ0NzksMjYuNzQ4MiwyNy4xOTQwNGMwLDMuNzc3NTMtMy42NjYzOCw3LjExMjM2LTcuODY5MzQsNy4xMTIzNgoJCWMtNi42MjE3LDAtOC43Njk2MS0zLjI0MTc0LTExLjgwOTg2LTYuNjY0bC04LjE0MTgyLDguNDYyNzJjNS4xOTEyMiw2LjM5MzczLDExLjYzMDA4LDkuNjM3MzYsMTkuMzIzNjUsOS42MzczNgoJCWMxMS41Mzk0OSwwLDIwLjg0MzI1LTcuMjA0MDUsMjAuODQzMjUtMTguNDYxNDlDMTk1Ljk5MjgsMzcuNzcxNDgsMTY5LjI0NTU2LDQ1LjMzNjI3LDE2OS4yNDU1NiwzNC44MDE5eiIvPgoJPHBhdGggZmlsbD0iIzIxMzM0MyIgZD0iTTMzNC43MjA0OSw3MC4yMDI3OGMtNi42MTY5NywwLTguNDk1MDYtMi44NjA5Ni04LjQ5NTA2LTcuMjQ1OThWNDMuNTQ2NThoMTAuMjg0ODJ2LTkuODM4OTJoLTEwLjI4NDgyCgkJVjIwLjczNTE1bC0xMS4zNTc3OSw1LjA5ODI2djM5LjUzOTMxYzAsMTAuMTA5Myw2Ljk3NDY0LDE1LjIwOTIsMTYuNTQyNjYsMTUuMjA5MmMxLjQzMTIxLDAsMy40MDEyMS0wLjA5MjQ4LDQuNDc1NjgtMC4zNTc2NgoJCWwyLjc3MzYyLTEwLjE5NzA2QzMzNy40MDc3NSw3MC4xMTM1NywzMzUuOTc3MDIsNzAuMjAyNzgsMzM0LjcyMDQ5LDcwLjIwMjc4eiIvPgoJPHBhdGggZmlsbD0iIzIxMzM0MyIgZD0iTTEyOC44OTMyMywzMi4yNzUzM2MtNS41NDY3MywwLTkuNDE4MjksMS42MTAwMi0xMy4xNTczNiw1LjI4MDAzVjE2LjI3Njg1aC0xMS4yMTgwOXYzOS40MzU0NgoJCWMwLDE0Ljc2MDQsMTAuNjcxNjEsMjQuODY5NjMsMjIuNjYyMzYsMjQuODY5NjNjMTMuMzI5MDYsMCwyNS4wMDc3Ny0xMC4yODg5OSwyNS4wMDc3Ny0yNC4xNTIzMgoJCUMxNTIuMTg3OTEsNDIuNzQxOTEsMTQxLjQxODY5LDMyLjI3NTMzLDEyOC44OTMyMywzMi4yNzUzM3ogTTEyOC44MjM1LDY5LjI5MTczYy03LjAyNzU0LDAtMTIuNzIzNzQtNS42OTY0Mi0xMi43MjM3NC0xMi43MjM1MwoJCWMwLTcuMDI2ODksNS42OTYyLTEyLjcyMzUzLDEyLjcyMzc0LTEyLjcyMzUzYzcuMDI2NjcsMCwxMi43MjMzMSw1LjY5NjY0LDEyLjcyMzMxLDEyLjcyMzUzCgkJQzE0MS41NDY4MSw2My41OTUzLDEzNS44NTAxNyw2OS4yOTE3MywxMjguODIzNSw2OS4yOTE3M3oiLz4KCTxwYXRoIGZpbGw9IiMyMTMzNDMiIGQ9Ik0yNTAuNjgzNDYsNTUuODQ3MjRjMC0xMy44NjMzMy0xMS42Nzg3My0yNC4xNTIzMi0yNS4wMDc3OC0yNC4xNTIzMgoJCWMtMTEuOTkwNzUsMC0yMi42NjIzNSwxMC4xMDkyMi0yMi42NjIzNSwyNC44Njk2M1Y5NmgxMS4yMTgwOVY3NC43MjE0OWMzLjczOTA2LDMuNjcwMDEsNy42MTA2Myw1LjI4MDAzLDEzLjE1NzM1LDUuMjgwMDMKCQlDMjM5LjkxNDIyLDgwLjAwMTUyLDI1MC42ODM0Niw2OS41MzQ5NCwyNTAuNjgzNDYsNTUuODQ3MjR6IE0yNDAuMDQyMzQsNTUuNzA4NjVjMCw3LjAyNjg5LTUuNjk2NjQsMTIuNzIzNTMtMTIuNzIzMzEsMTIuNzIzNTMKCQljLTcuMDI3NTQsMC0xMi43MjM3NC01LjY5NjY0LTEyLjcyMzc0LTEyLjcyMzUzYzAtNy4wMjcxLDUuNjk2Mi0xMi43MjM1MywxMi43MjM3NC0xMi43MjM1MwoJCUMyMzQuMzQ1Nyw0Mi45ODUxMywyNDAuMDQyMzQsNDguNjgxNTUsMjQwLjA0MjM0LDU1LjcwODY1eiIvPgoJPHBhdGggZmlsbD0iI0ZGNUMzNSIgZD0iTTI4Ni45MzI0NiwzMS4xNTE1NFYxOS44ODMxMmMyLjk0MTE2LTEuMzg5NTEsNS4wMDIwMS00LjM2NTA4LDUuMDAyMDEtNy44MTg1di0wLjI2MDM4CgkJYzAtNC43NjU1Ny0zLjg5OTQ0LTguNjY0OC04LjY2NDgzLTguNjY0OGgtMC4yNjAxNmMtNC43NjU3OCwwLTguNjY1MjIsMy44OTkyMy04LjY2NTIyLDguNjY0OHYwLjI2MDM4CgkJYzAsMy40NTM0MSwyLjA2MTI4LDYuNDI5NDIsNS4wMDI0MSw3LjgxODcydjExLjI2ODQyYy00LjM3OTI0LDAuNjc2NTYtOC4zODA2NSwyLjQ4MjY5LTExLjY4MjE5LDUuMTQwNzlsLTMwLjkzODg3LTI0LjA2NzU2CgkJYzAuMjAzNTEtMC43ODM3NywwLjM0NjQ1LTEuNTkxMjksMC4zNDczMi0yLjQzODY4YzAuMDA2OTctNS4zOTc5MS00LjM2MzEzLTkuNzc5MzMtOS43NjEyNS05Ljc4NjMxCgkJYy01LjM5ODEzLTAuMDA2NzUtOS43Nzk1Niw0LjM2MzU2LTkuNzg2NTMsOS43NjE0N2MtMC4wMDY1Myw1LjM5NzkxLDQuMzYzNTYsOS43NzkzMyw5Ljc2MTY5LDkuNzg2MDkKCQljMS43NTkyOCwwLjAwMjE4LDMuMzg3MzktMC40OTc0NSw0LjgxNDYxLTEuMzA5MTFsMzAuNDM0NjUsMjMuNjc1NzljLTIuNTg4NTksMy45MDY4NS00LjEwNDI1LDguNTg2OC00LjEwNDI1LDEzLjYyNDUyCgkJYzAsNS4yNzQ1OCwxLjY2NjAyLDEwLjE1MjgxLDQuNDgyMDksMTQuMTY1NzdsLTkuMjU1NzQsOS4yNTU3NGMtMC43MzE2OS0wLjIxOTQyLTEuNDkxMjctMC4zNzMwNC0yLjI5NDg2LTAuMzczMDQKCQljLTQuNDM1NDcsMC04LjAzMTYsMy41OTU5Mi04LjAzMTYsOC4wMzE2czMuNTk2MTMsOC4wMzE2LDguMDMxNiw4LjAzMTZjNC40MzU5LDAsOC4wMzE1OS0zLjU5NTkyLDguMDMxNTktOC4wMzE2CgkJYzAtMC44MDMxNi0wLjE1MzM4LTEuNTYyOTYtMC4zNzMwMi0yLjI5NDY1bDkuMTU1NDktOS4xNTUyOGM0LjE1NTcsMy4xNzI1NSw5LjMzMDY5LDUuMDc4MDMsMTQuOTYyODMsNS4wNzgwMwoJCWMxMy42NDU0NSwwLDI0LjcwNzUyLTExLjA2MjI5LDI0LjcwNzUyLTI0LjcwODE3QzMwNy44NDc3NSw0My4xODU4NywyOTguNzcyODYsMzIuOTgwMzMsMjg2LjkzMjQ2LDMxLjE1MTU0eiBNMjgzLjE0MDIzLDY4LjIwNjI4CgkJYy02Ljk5NjE1LDAtMTIuNjY4NC01LjY3MTM3LTEyLjY2ODQtMTIuNjY3NTNjMC02Ljk5NTk0LDUuNjcyMjQtMTIuNjY3NTMsMTIuNjY4NC0xMi42Njc1MwoJCWM2Ljk5NTMsMCwxMi42Njc1NCw1LjY3MTU4LDEyLjY2NzU0LDEyLjY2NzUzQzI5NS44MDc3Nyw2Mi41MzQ5MiwyOTAuMTM1NTMsNjguMjA2MjgsMjgzLjE0MDIzLDY4LjIwNjI4eiIvPgo8L2c+Cjwvc3ZnPgo=" >
+  <div class="roi-cards">
+    <div class="roi-card">
+      <img src="https://www.hubspot.com/hubfs/2023_MarketingHub_SEO1-2.svg" alt="Web Traffic" />
+      <h3>114%</h3>
+      <p>more web traffic</p>
+    </div>
+
+    <div class="roi-card">
+      <img src="https://www.hubspot.com/hubfs/2023_CRM_Deal_Tracking2-3.svg" alt="Deals" />
+      <h3>55%</h3>
+      <p>more deals</p>
+    </div>
+
+    <div class="roi-card">
+      <img src="https://www.hubspot.com/hubfs/2023_ServiceHub_Help_Desk_Ticket1-3.svg" alt="Support" />
+      <h3>43%</h3>
+      <p>more tickets resolved</p>
+    </div>
+  </div>
+
+  <p class="roi-subtext">HubSpot customers see improvement across their customer journey. What could your ROI be?</p>
+
+  <button class="roi-btn">See ROI report</button>
+</section>
+
+
+<div class="section-container">
+
+    <!-- Left: Integrations -->
+    <div class="box">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Shopify_logo_2018.svg" alt="Shopify" style="width: 50px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Mailchimp_logo.svg" alt="Mailchimp" style="width: 50px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Zapier_logo.png" alt="Zapier" style="width: 50px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Google_Ads_logo.svg" alt="Google Ads" style="width: 50px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" style="width: 50px;">
+      </div>
+      <h3>1,700+ ways to connect your tools</h3>
+      <a href="#">View all apps</a>
+    </div>
+
+    <!-- Right: Awards -->
+    <div class="box">
+      <div class="badges-container">
+        <img src="https://via.placeholder.com/80x100.png?text=Grid+Leader" alt="Grid Leader">
+        <img src="https://via.placeholder.com/80x100.png?text=Most+Implementable" alt="Most Implementable">
+        <img src="https://via.placeholder.com/80x100.png?text=Best+Relationship" alt="Best Relationship">
+        <img src="https://via.placeholder.com/80x100.png?text=Easiest+Admin" alt="Easiest Admin">
+        <img src="https://via.placeholder.com/80x100.png?text=Best+Results" alt="Best Results">
+        <img src="https://via.placeholder.com/80x100.png?text=Best+Usability" alt="Best Usability">
+      </div>
+      <h3>Voted #1 in 571 Reports</h3>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    
+    <!-- Left: Text and Buttons -->
+    <div class="cta-text">
+      <h2>Grow better with HubSpot today</h2>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Get a demo</a>
+        <a href="#" class="btn btn-outline">Get started free</a>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="cta-image">
+      <img src="https://via.placeholder.com/300x300.png?text=Image" alt="CTA Image">
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Popular Features -->
+      <div class="footer-column">
+        <h3>Popular Features</h3>
+        <ul>
+          <li><a href="#">All Products and Features</a></li>
+          <li><a href="#">Free Meeting Scheduler App</a></li>
+          <li><a href="#">Breeze AI Tools</a></li>
+          <li><a href="#">Email Tracking Software</a></li>
+          <li><a href="#">AI Content Writer</a></li>
+          <li><a href="#">AI Website Generator</a></li>
+          <li><a href="#">Email Marketing Software</a></li>
+          <li><a href="#">Lead Management Software</a></li>
+          <li><a href="#">AI Email Writer</a></li>
+          <li><a href="#">Free Website Builder</a></li>
+          <li><a href="#">Sales Email Templates</a></li>
+          <li><a href="#">Free Online Form Builder</a></li>
+          <li><a href="#">Free Chatbot Builder</a></li>
+          <li><a href="#">Free Live Chat Software</a></li>
+          <li><a href="#">Marketing Analytics</a></li>
+          <li><a href="#">Free Landing Page Builder</a></li>
+          <li><a href="#">Free Web Hosting</a></li>
+        </ul>
+      </div>
+
+      <!-- Free Tools -->
+      <div class="footer-column">
+        <h3>Free Tools</h3>
+        <ul>
+          <li><a href="#">See All Free Business Tools</a></li>
+          <li><a href="#">AI Search Grader</a></li>
+          <li><a href="#">Clip Creator</a></li>
+          <li><a href="#">Website Grader</a></li>
+          <li><a href="#">Make My Persona</a></li>
+          <li><a href="#">Email Signature Generator</a></li>
+          <li><a href="#">Brand Kit Generator</a></li>
+          <li><a href="#">Blog Ideas Generator</a></li>
+          <li><a href="#">Invoice Generator</a></li>
+          <li><a href="#">Free Business Templates</a></li>
+          <li><a href="#">Guide Creator</a></li>
+          <li><a href="#">Software Comparisons</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Template Marketplace</a></li>
+          <li><a href="#">Campaign Assistant</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Management Team</a></li>
+          <li><a href="#">Board of Directors</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Customers -->
+      <div class="footer-column">
+        <h3>Customers</h3>
+        <ul>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Join a Local User Group</a></li>
+        </ul>
+      </div>
+
+      <!-- Partners -->
+      <div class="footer-column">
+        <h3>Partners</h3>
+        <ul>
+          <li><a href="#">All Partner Programs</a></li>
+          <li><a href="#">Solutions Partner Program</a></li>
+          <li><a href="#">App Partner Program</a></li>
+          <li><a href="#">HubSpot for Startups</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-medium-m"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <!-- HubSpot Logo Text Placeholder -->
+    <div class="footer-logo">HubSpot</div>
+
+    <!-- Copyright -->
+    <div class="copyright">Copyright © 2025 HubSpot, Inc.</div>
+
+    <!-- Legal Links -->
+    <div class="legal-links">
+      <a href="#">Legal Stuff</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Security</a>
+      <span>|</span>
+      <a href="#">Website Accessibility</a>
+      <span>|</span>
+      <a href="#">Manage Cookies</a>
+    </div>
+
+  </div>
   </footer>
+
+
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: antiquewhite;
 }
 .main{
     width: 100%;
@@ -12,10 +13,10 @@
 header img{
     width: 30px;
     height: 30px;
+    padding-left: 30px;
 }
-header{
-        width: 400px;
-        float: left;
+header .option{
+        padding-inline: right;
         justify-content: center;
         align-items: center;
 }
@@ -25,5 +26,5 @@ header{
     justify-content: center;
     align-items: center;
 }
-
-
+section .form-page {
+    
