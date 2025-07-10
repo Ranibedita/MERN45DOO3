@@ -40,7 +40,7 @@ nav a {
   font-weight: 500;
 }
 nav a:hover{
-  background-color: cornflowerblue;
+  background-color: orangered;
 }
 
 nav .btn {
@@ -236,7 +236,7 @@ nav .btn:hover {
 }
 
 .card a {
-  color: #0077c9;
+  color: #0056d2;
   font-weight: 500;
   text-decoration: none;
 }
@@ -245,95 +245,82 @@ nav .btn:hover {
   text-decoration: underline;
 }
 
+
+
 .hubspot-info {
-  padding: 60px 20px;
-  background-color: #f1f8fb;
+  padding: 40px;
+  background-color: #f5f5f5;
 }
 
 .info-container {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-direction: row; /* This places video and text side by side */
   align-items: center;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Wraps nicely on small screens */
 }
 
-.info-image {
+.video-container {
   position: relative;
   flex: 1;
-  min-width: 280px;
-  max-width: 500px;
+  min-width: 300px;
+  max-width: 600px;
 }
 
-.info-image img {
+.video-container video {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
+  display: block;
 }
 
-.play-btn {
+.play-button {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding-bottom: 50px;
   transform: translate(-50%, -50%);
-  background: #ff5722;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
-  font-size: 40px;
-  padding: 15px 20px;
+  font-size: 32px;
+  border: none;
   border-radius: 50%;
+  padding: 16px 20px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .info-text {
   flex: 1;
-  min-width: 280px;
-}
-
-.info-text h2 {
-  font-size: 2rem;
-  color: #1b1c1d;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.info-text p {
-  font-size: 1.05rem;
-  color: #333;
-  margin-bottom: 20px;
+  min-width: 300px;
+  flex-direction: row;
 }
 
 .info-buttons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .btn {
-  padding: 14px 24px;
-  font-size: 1rem;
-  border-radius: 8px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s ease;
-  font-weight: 600;
+  border: none;
+  padding-bottom: 50px;
+  
 }
 
 .primary {
-  background-color: #ff5722;
+  background-color: #0052cc;
   color: white;
-  border: none;
 }
 
 .secondary {
-  background: transparent;
-  color: #ff5722;
-  border: 2px solid #ff5722;
+  background-color: #e0e0e0;
+  color: #333;
 }
 
-.primary:hover,
-.secondary:hover {
-  opacity: 0.9;
-}
 
 
 .front-office-section {
@@ -720,6 +707,9 @@ background-color: bisque;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
+      background-color: rgb(207, 221, 226);
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     .box {
